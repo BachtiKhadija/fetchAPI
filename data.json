@@ -1,0 +1,13 @@
+[  {
+   "nom":"Pizza 4 fromages",
+   "prixU":80
+   },
+   {
+    "nom":"Pizza Herbo",
+    "prixU":75
+    },
+    {
+    "nom":"Pizza viande haché",
+    "prixU":100
+    }
+]

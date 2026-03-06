@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="fruits">
+        <li>Banane</li>
+        <li>Orange</li>
+        <li>Fraise</li>
+        <li>Kiwi</li>
+    </ul>
+
+    <script type="text/javascript">
+       console.log(document.querySelector('#fruits').childNodes);
+    let f=[];
+   let fils=document.querySelector('#fruits').children;
+   for(let i=0;i<fils.length;i++){
+    f.push(fils[i].textContent);
+   }
+   console.log(f);
+   f.sort();
+   console.log(f);
+   let str=``;
+f.forEach(function(fr,pos){
+    str+=`<li>${fr}</li>`;
+});
+document.querySelector('#fruits').innerHTML=str;
+
+
+    </script>
+</body>
+</html>
